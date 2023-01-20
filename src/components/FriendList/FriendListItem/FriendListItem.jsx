@@ -1,17 +1,20 @@
 import PropTypes from 'prop-types';
+import css from './FriendListItem.module.css';
 
-export default function FriendListItem({ avatar, name, isOnline }) {
+export default function FriendListItem({ avatar, name, isOnline, statusIcon }) {
+  console.log(css[isOnline]);
   return (
     <>
-      <span class="status"></span>
-      <img class="avatar" src={avatar} alt={name} width="48" />
+      <span className={`${css.status} ${css[isOnline]}`}>{statusIcon}</span>
+      <img class="avatar" src={avatar} alt={name} height="40" />
       <p class="name">{name}</p>
     </>
   );
 }
 
-FriendListItem.prototTypes = {
-    avatar: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    isOnline: PropTypes.bool.isRequired,
-}
+FriendListItem.propTypes = {
+  statusIcon: PropTypes.string.isRequired,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};

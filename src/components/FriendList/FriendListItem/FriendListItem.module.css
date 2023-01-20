@@ -1,0 +1,9 @@
+.status {
+  font-size: 20px;
+  color: transparent;
+  text-shadow: 0 0 0 rgb(128, 0, 0);
+}
+
+.true {
+  text-shadow: 0 0 0 green;
+}

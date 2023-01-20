@@ -1,0 +1,15 @@
+.friendList {
+    padding-left: inherit;
+}
+
+.item {
+  background-color: rgb(211, 214, 39);
+  padding-left: auto;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  padding-left: 10px;
+  box-shadow: 10px 10px 15px 1px rgba(0, 0, 255, .2);
+}
