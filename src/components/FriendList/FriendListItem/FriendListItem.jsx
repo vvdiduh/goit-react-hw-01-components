@@ -6,8 +6,8 @@ export default function FriendListItem({ avatar, name, isOnline, statusIcon }) {
   return (
     <>
       <span className={`${css.status} ${css[isOnline]}`}>{statusIcon}</span>
-      <img class="avatar" src={avatar} alt={name} height="40" />
-      <p class="name">{name}</p>
+      <img className={css.avatar} src={avatar} alt={name} height="40" />
+      <p className={css.name}>{name}</p>
     </>
   );
 }

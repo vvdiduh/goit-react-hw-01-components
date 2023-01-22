@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from './Profile.module.css'
 export default function Profile({
   username,
   tag,
@@ -9,7 +10,7 @@ export default function Profile({
   statsLikes,
 }) {
   return (
-    <div class="profile">
+    <div className={css.profile}>
       <div class="description">
         <img src={avatar} alt={tag} class="avatar" />
         <p class="name">{username}</p>
@@ -17,17 +18,17 @@ export default function Profile({
         <p class="location">{location}</p>
       </div>
 
-      <ul class="stats">
+      <ul className={css.stats}>
         <li>
-          <span class="label">Followers </span>
+          <span class="label">&#9739; Followers </span>
           <span class="quantity">{statsFollowers}</span>
         </li>
         <li>
-          <span class="label">Views </span>
+          <span class="label">&#9865; Views </span>
           <span class="quantity">{statsViews}</span>
         </li>
         <li>
-          <span class="label">Likes </span>
+          <span class="label">&#10084; Likes </span>
           <span class="quantity">{statsLikes}</span>
         </li>
       </ul>

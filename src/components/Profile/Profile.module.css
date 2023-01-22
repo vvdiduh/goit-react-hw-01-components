@@ -1,0 +1,11 @@
+.profile {
+    padding: 40px;
+    background-color: rgba(148, 238, 238, 0.37);
+    border-radius: 25px;
+    margin-right: 40px;
+}
+
+.stats {
+    list-style: none;
+    padding: 0;
+}
