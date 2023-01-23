@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import css from './FriendListItem.module.css';
 
 export default function FriendListItem({ avatar, name, isOnline, statusIcon }) {
-  console.log(css[isOnline]);
   return (
     <>
       <span className={`${css.status} ${css[isOnline]}`}>{statusIcon}</span>

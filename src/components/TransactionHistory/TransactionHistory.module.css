@@ -1,3 +1,29 @@
-.thead {
-    background-color: rgb(49, 226, 94);
+.transactionHistory {
+  /* background-color: rgb(49, 226, 94);
+    border-radius: 30px; */
+  width: 1000px;
+}
+.title {
+  background-color: rgb(49, 226, 94);
+  border: solid 10px rgb(231, 231, 178);
+  border-radius: 30px;
+}
+
+.transactionInfo {
+  background-color: rgb(231, 231, 178);
+  border: solid 5px rgb(49, 226, 94);
+}
+.type {
+  padding-left: 20px;
+  margin-left: 10px;
+  border: thick double #32a1ce;
+}
+.amount {
+  text-align: center;
+  border: thick double #32a1ce;
+}
+.currency {
+  text-align: center;
+  border: thick double #32a1ce;
+
 }
